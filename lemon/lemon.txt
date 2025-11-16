@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 22-Set-2025 às 23:28
+-- Data de Criação: 16-Nov-2025 às 22:19
 -- Versão do servidor: 5.6.13
 -- versão do PHP: 5.4.17
 
@@ -19,6 +19,33 @@ SET time_zone = "+00:00";
 --
 -- Base de Dados: `lemon_db`
 --
+CREATE DATABASE IF NOT EXISTS `lemon_db` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `lemon_db`;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `posts`
+--
+
+CREATE TABLE IF NOT EXISTS `posts` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `content` text NOT NULL,
+  `category` varchar(100) NOT NULL,
+  `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=4 ;
+
+--
+-- Extraindo dados da tabela `posts`
+--
+
+INSERT INTO `posts` (`id`, `user_id`, `content`, `category`, `created_at`) VALUES
+(1, 6, 'lalalala', 'Filmes e SÃ©ries', '2025-11-16 18:52:15'),
+(2, 6, 'ctatatuajdhjn', 'Filmes e SÃ©ries', '2025-11-16 18:56:00'),
+(3, 6, 'lalala', 'Animes e MangÃ¡s', '2025-11-16 19:03:30');
 
 -- --------------------------------------------------------
 
@@ -33,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `senha` varchar(255) DEFAULT NULL,
   `is_admin` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=7 ;
 
 --
 -- Extraindo dados da tabela `usuarios`
@@ -44,7 +71,18 @@ INSERT INTO `usuarios` (`id`, `nome_usuario`, `email`, `senha`, `is_admin`) VALU
 (2, 'joana', 'joana@gmail.com', '$2y$10$ORAgT552XpoDWieWrYabY./uEunGIVzN4CJXIhZFtIdjUBfFh7Nei', 0),
 (3, 'daniel', 'daniel@gmail.com', '$2y$10$0JBEM/f5NmxzfudUhf3ece8kXFVYzhVS4y8qZaC0z.wRR1bFi3h8K', 0),
 (4, 'Admin', 'admin@exemplo.com', '21232f297a57a5a743894a0e4a801fc3', 1),
-(5, 'is3', 'isa@email.com', '202cb962ac59075b964b07152d234b70', 0);
+(5, 'is3', 'isa@email.com', '202cb962ac59075b964b07152d234b70', 0),
+(6, 'vini', 'vini@email.com', '6b22936be53843554ea3e3021964b5f8', 0);
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Limitadores para a tabela `posts`
+--
+ALTER TABLE `posts`
+  ADD CONSTRAINT `posts_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `usuarios` (`id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -53,29 +53,29 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1;
         <div class="row justify-content-center">
             <div class="col-md-3">
                 <div class="coluna text-center">
-                    <a href="pg.php"> <p>Filmes e Séries </p> </a>
-                    <a href="pg.php"> <p>Animes e Mangás</p> </a>
-                    <a href="pg.php"> <p>Jogos</p> </a> 
-                    <a href="pg.php"> <p>Música</p> </a>
+                    <a href="categorias/pg.php"> <p>Filmes e Séries </p> </a>
+                    <a href="categorias/anime.php"> <p>Animes e Mangás</p> </a>
+                    <a href="categorias/jogos.php"> <p>Jogos</p> </a> 
+                    <a href="categorias/musica.php"> <p>Música</p> </a>
                 </div>
             </div>
             <div class="col-md-3">
                 <a href="#">
                     <div class="coluna text-center">
-                        <a href="pg.php"> <p>Comida e Bebida</p> </a>
-                        <a href="pg.php"> <p>Moda e Estilo</p> </a>
-                        <a href="pg.php"> <p>Esportes</p> </a>
-                        <a href="pg.php"> <p>Pets e Animais</p> </a>
+                        <a href="categorias/comida.php"> <p>Comida e Bebida</p> </a>
+                        <a href="categorias/moda.php"> <p>Moda e Estilo</p> </a>
+                        <a href="categorias/esportes.php"> <p>Esportes</p> </a>
+                        <a href="categorias/pets.php"> <p>Pets e Animais</p> </a>
                     </div>
                 </a>
             </div>
             <div class="col-md-3">
                 <a href="#">
                     <div class="coluna text-center">
-                        <a href="pg.php"> <p>Livros e Literatura</p> </a>
-                        <a href="pg.php"> <p>Arte e Design</p> </a>
-                        <a href="pg.php"> <p>Cultura Mundial</p> </a>
-                        <a href="pg.php"> <p>Curiosidades</p> </a>
+                        <a href="categorias/livros.php"> <p>Livros e Literatura</p> </a>
+                        <a href="categorias/arte.php"> <p>Arte e Design</p> </a>
+                        <a href="categorias/culturaMundial.php"> <p>Cultura Mundial</p> </a>
+                        <a href="categorias/curiosidades.php"> <p>Curiosidades</p> </a>
                     </div>
                 </a>
             </div>
@@ -86,31 +86,32 @@ $is_admin = isset($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1;
         <div class="row justify-content-center">
             <div class="col-md-3">
                 <div class="coluna text-center">
-                    <a href="#"> <p>Religião </p> </a>
-                    <a href="#"> <p>Fotografia </p> </a>
-                    <a href="#"> <p>Astrologia</p> </a>
-                    <a href="#"> <p>Contos e Fábulas</p> </a>
+                    <a href="categorias/religiao.php"> <p>Religião </p> </a>   
+                    <a href="categorias/fotografia.php"> <p>Fotografia </p> </a>
+                    <a href="categorias/astrologia.php"> <p>Astrologia</p> </a>
+                    <a href="categorias/contosFabulas.php"> <p>Contos e Fábulas</p> </a>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="coluna text-center">
-                    <a href="#"> <p>Lendas Urbanas</p> </a>
-                    <a href="#"> <p>Mitologia</p> </a>
-                    <a href="#"> <p>Autoajuda</p> </a>
-                    <a href="#"> <p>Oceanografia</p> </a>
+                    <a href="categorias/lendasUrbanas.php"> <p>Lendas Urbanas</p> </a>
+                    <a href="categorias/mitologia.php"> <p>Mitologia</p> </a>
+                    <a href="categorias/autoAjuda.php"> <p>Auto Ajuda</p> </a>
+                    <a href="categorias/oceanografia.php"> <p> Oceanogr</p> </a>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="coluna text-center">
-                    <a href="#"> <p>Quadrinhos</p> </a> 
-                    <a href="#"> <p>Cultura DIY</p> </a>
-                    <a href="#"> <p>Podcast</p> </a> 
-                    <a href="#"> <p>Programação</p> </a>
+                    <a href="categorias/quadrinhos.php"> <p>Quadrinhos</p> </a> 
+                    <a href="categorias/culturaPOP.php"> <p>Cultura POP</p> </a>
+                    <a href="categorias/podcast.php"> <p>Podcast</p> </a> 
+                    <a href="categorias/programacao.php"> <p>Programação</p> </a>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 <footer class="footer">
     <a href="index.php"><img src="img/logo.png" width="100px" alt="Logo do Footer"> </a>
 </footer>
