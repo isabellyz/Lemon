@@ -60,7 +60,7 @@ $total_posts = count($posts_usuario);
                 <h1 style="color: white;" class="m-0">Meu Perfil</h1>
             </div>
             <div class="col-3 text-end p-4">
-                <a href="pg.php" class="btn btn-outline-light btn-sm">Voltar ao Feed</a>
+                <a href="categorias/pg.php" class="btn btn-outline-light btn-sm">Voltar ao Feed</a>
             </div>
         </div>
     </header>
@@ -70,7 +70,6 @@ $total_posts = count($posts_usuario);
             <div class="col-12 col-md-3">
                 <div class="p-3 text-center" style="border: 2px solid #289256;">
                     <h5>Menu</h5>
-                    <a href="pg.php" class="d-block py-2">Feed Principal</a>
                     <a href="home.php" class="d-block py-2">Página Inicial</a>
                     <a href="edit_profile.php" class="d-block py-2">Editar Perfil</a>
                     <a href="logout.php" class="d-block py-2 text-danger">Sair</a>
